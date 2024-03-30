@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #0e750e;
+    font-weight: 200;
+    line-height: 1.1;
+    max-width: 1950px;
+}
+
+
+/*
+   HEADER MA NIGGA
+*/
+.navbar-area {
+    padding: 0 1rem;
+    font-weight: 700;
+    width: 100%;
+    height: 100px;
+    background-color: azure;
+    position: fixed;
+    z-index: 2;
+}
+
+.main-menu {
+    padding: 0 auto;
+    padding-left: 20%;
+}
+
+.main-menu li {
+    list-style: none;
+    float: left;
+    line-height: 100px;
+}
+
+.main-menu li {
+    display: inline-block;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0 50px;
+    display: block;
+}
+
+.main-menu li a:hover {
+    color: #89fc0e;
+}
+
+.home-btn a {
+    color: #0d6d0d;
+}
+
+.recipes-btn a {
+    color: #258d2a;
+}
+
+.about-us-btn a {
+    color: #1f9e13;
+}
+
+.contact-btn a {
+    color: #3cb400;
+}
+
+.login-btn a {
+    color: #5eb600;
+}
+
+.main-menu .recipes-btn:hover .sub-menu {
+    display: block;
+}
+/*
+.sub-menu {
+    display: none;
+    position: absolute;
+    transform: translateY(-25%);
+    z-index: 999;
+    width: 200px;
+    height: auto;
+
+}
+
+.sub-menu a {
+    color: #5eb600;
+    line-height: 1;
+    transform: translateX(-15%);
+}
+
+.sub-menu li {
+    padding-top: 15px;
+}
+
+.sub-menu li a:hover {
+    color: #6bcf00;
+}
+*/
+.container-menu{
+    display: flex;
+    max-width: 100%;
+    margin: 0;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+img.logo {
+    padding-left: 10%;
+    padding-top: 1%;
+}
+/*
+ENDING HEADER MA NIGGA
+*/
+
+
+
+form {
+    position: absolute;
+    top: 37%;
+    margin-left: 450px;
+}
+
+.search {
+    --padding: 14px;
+
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background: white;
+    transition: box-shadow 0.25s;
+}
+
+form p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 25px;
+}
+.search:focus-within {
+    box-shadow: 0 0 8px rgb(116, 180, 51);
+}
+
+.search-input {
+    font-size: 1rem;
+    font-family: 'Lexend', sans-serif;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 500px;
+}
+
+.search-input::placeholder
+.search-icon {
+    color: rgba(0, 0, 0, 0.25)
+}
+
+
+.more-info .all {
+    margin-top: 60%;
+    margin-left: 320px;
+    background-image: linear-gradient(to right, #0d6d0d, #258d2a, #1f9e13, #3cb400, #5eb600);
+    position: absolute;
+    width: 55%;
+    height: 30%;
+    list-style-type: none;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.more-info .all li {
+    padding: 20px;
+    
+}
+
+.more-info .all a {
+    color: white;
+}
+
+.all a:hover {
+    color: #89fc0e;
+}
+.copyright-podz-ni-bordskiee {
+    padding: 20px;
+    text-align: center;
+}
+
+.copyright {
+    position: absolute;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.copy {
+    margin-left: 530px;
+    margin-top: 72%;
+}
