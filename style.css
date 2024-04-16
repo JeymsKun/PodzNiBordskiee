@@ -264,7 +264,7 @@ SHOW ALL MA NIGGA
 }
 
 .dish-one {
-    margin-left: 280px;
+    margin-left: 450px;
     margin-top: 50px;
 }
 
@@ -316,7 +316,7 @@ SHOW ALL MA NIGGA
 }
 
 .dish-two {
-    margin-left: 750px;
+    margin-left: 54%;
     margin-top: 50px;
 }
 
@@ -368,7 +368,7 @@ SHOW ALL MA NIGGA
 }
 
 .dish-three {
-    margin-left: 280px;
+    margin-left: 24%;
     padding-top: 500px;
     
 }
@@ -421,7 +421,7 @@ SHOW ALL MA NIGGA
 }
 
 .dish-four {
-    margin-left: 750px;
+    margin-left: 54%;
 }
 
 .overlay-goat {
@@ -472,7 +472,7 @@ SHOW ALL MA NIGGA
 }
 
 .dish-five {
-    margin-left: 750px;
+    margin-left: 24%;
     padding-top: 500px;
 }
 
@@ -524,7 +524,7 @@ SHOW ALL MA NIGGA
 }
 
 .dish-six .Egg {
-    margin-left: 280px;
+    margin-left: 54%;
 
 }
 
@@ -539,7 +539,7 @@ SHOW ALL MA NIGGA
 }
 
 .Egg:hover .overlay-egg {
-    height: 30%; 
+    height: 24%; 
     border-radius: 25px;
 }
 
@@ -577,7 +577,7 @@ SHOW ALL MA NIGGA
 
 .dish-seven {
     position: absolute;
-    margin-left: 280px;
+    margin-left: 24%;
     padding-top: 500px;
 }
 
@@ -629,7 +629,7 @@ SHOW ALL MA NIGGA
 }
 
 .dish-eight {
-    margin-left: 750px;
+    margin-left: 54%;
     padding-top: 500px; 
 }
 
@@ -714,7 +714,7 @@ ENDING MA NIGGA
 form {
     position: absolute;
     top: 390%;
-    margin-left: 450px;
+    margin-left: 35%;
 }
 
 .search {
@@ -759,7 +759,7 @@ form p {
 
 .more-info .all {
     margin-top: 80%;
-    margin-left: 320px;
+    margin-left: 24%;
     background-image: linear-gradient(to right, #0d6d0d, #258d2a, #1f9e13, #3cb400, #5eb600);
     position: absolute;
     width: 55%;
@@ -796,7 +796,7 @@ form p {
 }
 
 .copy {
-    margin-left: 540px;
+    margin-left: 42%;
     margin-top: 93%;
 }
 
