@@ -210,7 +210,7 @@ input[name="slider"]{
 }
 
 .welcome-text span {
-    color: #3cb400;
+    color: #fff;
     font-family:'Poppins',  sans-serif;
 }
 
@@ -219,9 +219,9 @@ input[name="slider"]{
 }
 
 .welcome-text p{
-    font-size: 1rem;
-    color: #3cb400;
-    font-weight: 500;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 600;
 }
 
 
