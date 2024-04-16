@@ -72,10 +72,11 @@ body {
     color: #5eb600;
 }
 
+/*
 .main-menu .recipes-btn:hover .sub-menu {
     display: block;
 }
-/*
+
 .sub-menu {
     display: none;
     position: absolute;
@@ -799,6 +800,7 @@ form p {
     margin-top: 93%;
 }
 
+/*
 .cookie-consent-modal {
     height: 100%;
     width: 100%;
@@ -853,3 +855,4 @@ form p {
     background-color: #5eb600;
     color: white;
 }
+*/
