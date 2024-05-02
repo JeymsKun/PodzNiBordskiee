@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Podz Ni Bordskiee</title>
         <link href="contact-us-style.css" rel="stylesheet"/>
+        <link href="contact-us-responsive.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
         <link rel="icon" type="x-icon" href="favicon.png">
 
@@ -12,20 +14,21 @@
 
     <body>
 
-        <header class="top-area">
-            <nav class="navbar-area">
-                <div class="container">
-                    <div class="container-menu">
-                        <img src="logo.png" alt="logo" class="logo">
-                        <ul class="main-menu">
-                            <li class="home-btn"><a href="index.html">Home</a></li>
-                            <li class="recipes-btn"><a href="recipes.html">Recipes</a></li>
-                            <li class="about-us-btn"><a href="about-us.html">About Us</a></li>
-                            <li class="contact-btn"><a href="contact-us.html">Contact Us</a></li>
-                            <li class="login-btn"><a href="sign-up.html">Sign Up</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <header class="header">
+            <a href="index.html" class="logo"><img src="logo.png" alt="logo"></a>
+    
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+    
+            <nav class="navbar">
+                <a href="index.html" style="--i:0;" class="home-btn">Home</a>
+                <a href="recipes.html" style="--i:1;" class="recipes-btn">Recipes</a>
+                <a href="about-us.html" style="--i:2;" class="about-us-btn">About Us</a>
+                <a href="contact-us.html" style="--i:3;" class="contact-btn">Contact Us</a>
+                <!-- <a href="sign-up.html" style="--i:4;" class="login-btn">Sign Up</a> -->
             </nav>
         </header>
 
@@ -61,32 +64,28 @@
             </div>
         </section>
 
-        <section class="bottom-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="more-info">
-                            <ul class="all">
-                                <li><a href="privacy-notice.html">Privacy Notice</a></li>
-                                <li><a href="cookie-notice.html">Cookie Notice</a></li>
-                                <li><a href="legal-notice.html">Legal Notice</a></li>
-                              </ul>
-                        </div>
-                    </div>
+        <div class="bottom-adjust adjust-bottom">
+            <section class="bottom-area">
+                <div class="more-info">
+                    <ul class="all">
+                        <li><a href="legal-notice.html">Legal Notice</a></li>
+                        <li><a href="privacy-notice.html">Privacy Notice</a></li>
+                        <li><a href="cookie-notice.html">Cookie Notice</a></li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-
-        <footer class="copyright-podz-ni-bordskiee">
-            <div class="container">
+            </section>
+    
+            <footer class="copyright-podz-ni-bordskiee">
                 <div class="footer-copyright">
-                    <p class="copyright copy">
-                        © 2024 Podz Ni Bordskiee<br>
-                        Follow us on Facebook <a href="#" style="text-decoration: none; color: white;">@PodzNiBordskiee</a><br>
+                    <p class="copyright">
+                        © 2024 Podz Ni Bordskiee<br />
+                        Follow us on Facebook <i class="fa-brands fa-facebook"></i><a
+                            href="https://www.facebook.com/bordzkie.bedz" style="text-decoration: none; color: white;">
+                            @PodzNiBordskiee</a>
                     </p>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
 
     </body>
 </html>

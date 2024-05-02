@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 10%;
+    padding: 1.5rem 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,9 +85,72 @@
     cursor: pointer;
     display: none;
 }
-/*
-ENDING HEADER MA NIGGA
-*/
+
+
+.food-details-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-food-details {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.container-food-details {
+    font-family: 'Poppins', sans-serif;
+}
+
+#food-name {
+    font-size: 2rem;
+    color: #0d6d0d;
+    padding: 20px;
+}
+
+#food-image {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+
+}
+
+#food-description {
+    text-align: justify;
+    font-size: 1.3rem;
+    color: #0d6d0d;
+    padding: 20px;
+}
+
+.food-details-container h2 {
+    text-align: justify;
+    font-size: 2rem;
+    color: #0d6d0d;
+    padding: 15px;
+
+}
+
+#food-ingredients {
+    list-style-type: none;
+    text-align: justify;
+    font-size: 1.3rem;
+    color: #0d6d0d;
+    padding: 15px;
+    
+}
+
+#food-instructions {
+    text-align: justify;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #0d6d0d;
+    padding: 20px;
+}
+
 
 form {
     position: relative;
@@ -98,8 +161,7 @@ form {
 
 .form-search {
     position: absolute;
-    margin-top: 40rem;
-  
+    margin-top: 200rem;
 }
 
 .search {
@@ -120,7 +182,6 @@ form p {
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     color: #258d2a;
-
     margin-bottom: 25px;
 }
 
@@ -148,6 +209,41 @@ form p {
     color: rgba(0, 0, 0, 0.25)
 }
 
+
+.search-suggestions {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 8px #258d2a;
+    border-radius: 20px;
+    padding: 30px;
+    width: 500px;
+    max-height: 200px;
+    overflow-y: auto;
+ 
+}
+
+
+.search-suggestions li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.search-suggestions a {
+    text-decoration: none;
+    color: #258d2a;
+}
+
+.search-suggestions a:hover {
+    background-color: #f0f0f0;
+}
+
+.search-suggestions.hidden {
+    display: none;
+}
+
 .bottom-adjust {
     position: relative;
     display: flex;
@@ -159,14 +255,13 @@ form p {
     background-image: linear-gradient(to right, #0d6d0d, #258d2a, #1f9e13, #3cb400, #5eb600);
     width: 50%;
     height: 40%;
-
 }
 
 .adjust-bottom {
     position: absolute;
-    top: 0;
-    margin-left: 22rem;
-    margin-top: 55rem;
+    top: 300%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
