@@ -148,6 +148,41 @@ form p {
     color: rgba(0, 0, 0, 0.25)
 }
 
+.search-suggestions {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 8px #258d2a;
+    border-radius: 20px;
+    padding: 30px;
+    width: 500px;
+    max-height: 200px;
+    overflow-y: auto;
+ 
+}
+
+
+.search-suggestions li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.search-suggestions a {
+    text-decoration: none;
+    color: #258d2a;
+}
+
+.search-suggestions a:hover {
+    background-color: #f0f0f0;
+}
+
+.search-suggestions.hidden {
+    display: none;
+}
+
+
 .bottom-adjust {
     position: relative;
     display: flex;
