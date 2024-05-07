@@ -1,3 +1,9 @@
+@media screen and (max-width: 1680px){
+    
+}
+
+
+
 @media screen and (max-width: 1440px) {
     .header {
         padding: 1rem 2%; 
@@ -18,10 +24,13 @@
 
 @media screen and (max-width: 1200px){
 
-    
 
 }
 
+@media screen and (max-width: 1024px){
+
+
+}
 
 
 @media (max-width: 992px){
@@ -37,6 +46,8 @@
 }
 
 @media (max-width: 768px){
+
+    
 
 
     .icons {
@@ -128,22 +139,64 @@
         transition-delay: calc(.15s * var(--i));
     }
 
-	.slideshow {
+    /* .header {
+        padding: 1rem 2%;
+    } */
+
+    .slideshow {
+       margin: 5rem;
+    }
+
+    .welcome-text {
         position: absolute;
+        margin-top: 65rem;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: 1;
+    }
+
+    .welcome-the-most-message {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 115%;
+        width: 100%;
+    }
+
+    .Chicken {
+        margin-right:  45rem;
+    }
+
+    .Pork {
+        margin-right: 8rem;
+    }
+
+    .Beef {
+        margin-right: 45rem;
+    }
+
+    .Goat {
+        margin-right: 8rem;
+    }
+
+    .Frog {
+        margin-right: 45rem;
+    }
+
+    .Egg {
+        margin-right: 8rem;
+    }
+
+    .Fish {
+        margin-right: 45rem;
+    }
+
+    .Squid {
+        margin-right: 8rem;
     }
 
 
-    .navigaition-auto .auto-btn1 .auto-btn2 .auto-btn3 .auto-btn4 .auto-btn5 {
-        padding: 5px;
-    }
-
-    .manual-btn, .auto-btn1, .auto-btn2, .auto-btn3, .auto-btn4, .auto-btn5 {
-        padding: 5px;
-    }
-
-    .manual-btn:not(:last-child), .navigation-auto div:not(:last-child) {
-        margin-right: 20px; 
-    }
+    
     
 
 }
