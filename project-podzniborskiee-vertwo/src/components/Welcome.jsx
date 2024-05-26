@@ -1,18 +1,22 @@
-import logo from '../logo.svg';
-import '../css/style.css';
-import '../css/responsive.css';
+import '../css/home-style.css';
+import '../css/home-responsive.css';
 import '../App.css';
 
 function Welcome() {
-    return (
-        <div className="welcome-text-container">
-            <div className="welcome-text">
-                <h1>Welcome to<br /> Podz Ni Bordskiee</h1>
-                <p>The underrated food website. <br/> Food brings people together on many different levels.</p>
-            </div>
-        </div>
-    );
-  }
-  
+  return (
+    <div className="welcome-text-container">
+      <div className="welcome-text">
+        <h1>
+          Welcome to
+          <br /> Podz Ni Bordskiee
+        </h1>
+        <p>
+          The underrated food website. <br /> Food brings people together on
+          many different levels.
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default Welcome;
-  

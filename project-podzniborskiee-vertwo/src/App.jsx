@@ -1,25 +1,25 @@
-import Header from './components/Header';
-import Welcome from './components/Welcome';
-import Slideshow from './components/Slideshow';
-import Latest from './components/Latest';
-import LatestTitle from './components/LatestTitle';
-import Search from './components/Search';
-// import FoodDetails from './components/FoodDetails';
-import Bottom from './components/Bottom';
+import React from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'; 
+import Home from './pages/Home';
+import Recipes from './pages/Recipes';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import SignUp from './pages/SignUp';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Welcome />
-      <Slideshow />
-      <Latest />
-      <LatestTitle />
-      <Search />
-      {/* <FoodDetails /> */}
-      <Bottom />
-    </>
-
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navigate replace to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/recipes" element={<Recipes />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/signup" element={<SignUp />} />
+        </Routes>
+      </BrowserRouter>  
+    </div>
   );
 }
 

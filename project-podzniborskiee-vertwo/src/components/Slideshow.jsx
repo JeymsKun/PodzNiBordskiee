@@ -1,8 +1,7 @@
-import logo from '../logo.svg';
-import '../css/style.css';
-import '../css/responsive.css';
+import React, { useState, useEffect } from 'react';
+import '../css/home-style.css';
+import '../css/home-responsive.css';
 import '../App.css';
-import '../scripts/Slideshow';
 import slideshowFirstImage from '../img/1.jpg';
 import slideshowSecondImage from '../img/2.jpg';
 import slideshowThirdImage from '../img/3.jpg';
@@ -10,56 +9,78 @@ import slideshowFourthImage from '../img/4.jpg';
 import slideshowFifthImage from '../img/5.jpg';
 
 function Slideshow() {
-    return (
-        <div className="slideshow">
+  const [selectedRadio, setSelectedRadio] = useState("radio1");
 
-            <div className="photo-slider">
-                <div className="photo-slides">
-                    <input type="radio" name="radio-btn" id="radio1"/>
-                    <input type="radio" name="radio-btn" id="radio2"/>
-                    <input type="radio" name="radio-btn" id="radio3"/>
-                    <input type="radio" name="radio-btn" id="radio4"/>
-                    <input type="radio" name="radio-btn" id="radio5"/>
+  const changeSelection = (radioId) => {
+    setSelectedRadio(radioId);
+  };
 
-                    <div className="slide first">
-                        <img src={slideshowFirstImage} alt=""/>
-                    </div>
-                    <div className="slide">
-                        <img src={slideshowSecondImage} alt=""/>
-                    </div>
-                    <div className="slide">
-                        <img src={slideshowThirdImage} alt=""/>
-                    </div>
-                    <div className="slide">
-                        <img src={slideshowFourthImage} alt=""/>
-                    </div>
-                    <div className="slide">
-                        <img src={slideshowFifthImage} alt=""/>
-                    </div>
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      changeSelection((prev) => {
+        let nextNum = parseInt(prev.replace("radio", "")) + 1;
+        if (nextNum > 5) nextNum = 1;
+        return "radio" + nextNum;
+      });
+    }, 5000);
 
+    return () => clearInterval(intervalId);
+  }, []);
 
-                    <div className="navigation-auto">
-                        <div className="auto-btn1"></div>
-                        <div className="auto-btn2"></div>
-                        <div className="auto-btn3"></div>
-                        <div className="auto-btn4"></div>
-                        <div className="auto-btn5"></div>
-                    </div>
+  return (
+    <div className="slideshow">
+      <div className="photo-slider">
+        <div className="photo-slides">
+          {[...Array(5)].map((_, index) => {
+            const radioId = `radio${index + 1}`;
+            return (
+              <input
+                key={radioId}
+                type="radio"
+                name="radio-btn"
+                id={radioId}
+                checked={selectedRadio === radioId}
+                onChange={() => changeSelection(radioId)}
+                readOnly
+              />
+            );
+          })}
 
-                </div>
-
-                <div className="navigation-manual">
-                    <label htmlFor="radio1" className="manual-btn"></label>
-                    <label htmlFor="radio2" className="manual-btn"></label>
-                    <label htmlFor="radio3" className="manual-btn"></label>
-                    <label htmlFor="radio4" className="manual-btn"></label>
-                    <label htmlFor="radio5" className="manual-btn"></label>
-                </div>
+          {[
+            slideshowFirstImage,
+            slideshowSecondImage,
+            slideshowThirdImage,
+            slideshowFourthImage,
+            slideshowFifthImage,
+          ].map((image, index) => (
+            <div key={index} className={`slide ${index === 0 ? "first" : ""}`}>
+              <img src={image} alt={`Slide ${index + 1}`} />
             </div>
+          ))}
 
+          <div className="navigation-auto">
+            {[...Array(5)].map((_, index) => (
+              <div key={index} className={`auto-btn${index + 1}`}></div>
+            ))}
+          </div>
         </div>
-    );
-  }
-  
+
+        <div className="navigation-manual">
+          {[...Array(5)].map((_, index) => {
+            const radioId = `radio${index + 1}`;
+            return (
+              <label
+                key={index}
+                htmlFor={radioId}
+                className="manual-btn"
+                onClick={() => changeSelection(radioId)}
+              ></label>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default Slideshow;
-  
