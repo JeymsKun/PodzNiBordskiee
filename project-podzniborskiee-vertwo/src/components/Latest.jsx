@@ -1,5 +1,5 @@
-import '../css/home-style.css';
-import '../css/home-responsive.css';
+import '../css/style.css';
+import '../css/responsive.css';
 import '../App.css';
 import dishOneImage from '../img/Chicken-Adobo.jpg';
 import dishTwoImage from '../img/Pork-Adobo.jpg';

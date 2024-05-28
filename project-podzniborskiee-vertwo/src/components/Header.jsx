@@ -1,6 +1,6 @@
+import '../css/style.css';
+import '../css/responsive.css';
 import React, { useState } from 'react';
-import '../css/home-style.css';
-import '../css/home-responsive.css';
 import '../App.css';
 import projectLogo from '../img/logo.png';
 import { Link } from 'react-router-dom';

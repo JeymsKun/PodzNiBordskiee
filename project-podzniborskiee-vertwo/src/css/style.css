@@ -725,14 +725,14 @@ form {
     align-items: center;
 }
 
-.form-search {
+.search-form {
     position: absolute;
     left: 0;
-    margin-top: 350rem;
-    margin-left: 25rem;
+    margin-top: 330rem;
+    margin-left: 23rem;
 }
 
-.search {
+.searching {
     --padding: 14px;
 
     width: max-content;
@@ -753,7 +753,7 @@ form p {
     margin-bottom: 25px;
 }
 
-.search:focus-within {
+.searching:focus-within {
     box-shadow: 0 0 8px #258d2a;
 }
 
@@ -778,7 +778,7 @@ form p {
 }
 
 
-.search-suggestions {
+.suggestions-search {
     position: absolute;
     top: 105%;
     left: 0;
@@ -794,38 +794,38 @@ form p {
 }
 
 
-.search-suggestions li {
+.suggestions-search li {
     list-style-type: none;
     margin-bottom: 10px;
 }
 
-.search-suggestions a {
+.suggestions-search a {
     text-decoration: none;
     color: #258d2a;
 }
 
-.search-suggestions a:hover {
+.suggestions-search a:hover {
     background-color: #f0f0f0;
 }
 
-.search-suggestions.hidden {
+.suggestions-search.hidden {
     display: none;
 }
 
-.bottom-adjust {
+.bottom-area-adjust {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.bottom-adjust {
+.bottom-area-adjust {
     background-image: linear-gradient(to right, #0d6d0d, #258d2a, #1f9e13, #3cb400, #5eb600);
     width: 50%;
     height: 40%;
 }
 
-.adjust-bottom {
+.area-adjust-bottom {
     position: absolute;
     top: 0;
     left: 0;
@@ -834,7 +834,7 @@ form p {
 
 }
 
-.more-info {
+.more-information {
     position: absolute;
     top: 2%;
     right: 0; 
@@ -842,11 +842,11 @@ form p {
 
 }
 
-.all {
+.important {
     list-style-type: none;
 }
 
-.all a {
+.important a {
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     line-height: 3;
@@ -854,14 +854,14 @@ form p {
    
 }   
 
-.footer-copyright {
+.copyright-footer {
     position: absolute;
     top: 0;
     right: 28%;
     margin-top: 15rem;
 }
 
-.copyright {
+.copyright-name {
     text-align: center;
     color: white;
 }

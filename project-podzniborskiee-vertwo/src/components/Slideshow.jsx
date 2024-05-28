@@ -1,6 +1,6 @@
+import '../css/style.css';
+import '../css/responsive.css';
 import React, { useState, useEffect } from 'react';
-import '../css/home-style.css';
-import '../css/home-responsive.css';
 import '../App.css';
 import slideshowFirstImage from '../img/1.jpg';
 import slideshowSecondImage from '../img/2.jpg';

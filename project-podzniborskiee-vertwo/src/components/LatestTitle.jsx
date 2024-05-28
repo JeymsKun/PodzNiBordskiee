@@ -1,5 +1,5 @@
-import '../css/home-style.css';
-import '../css/home-responsive.css';
+import '../css/style.css';
+import '../css/responsive.css';
 import '../App.css';
 
 function LatestTitle() {

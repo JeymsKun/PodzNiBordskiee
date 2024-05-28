@@ -1,30 +1,32 @@
+import '../css/style.css';
+import '../css/responsive.css';
 import React from 'react';
-import '../css/home-style.css';
-import '../css/home-responsive.css';
 import '../App.css';
+import { Link } from 'react-router-dom';
 
 function Bottom() {
   return (
-    <div className="bottom-adjust adjust-bottom">
-      <section className="bottom-area">
-        <div className="more-info">
-          <ul className="all">
+   
+    <div className="bottom-area-adjust area-adjust-bottom">
+      <section className="bottom">
+        <div className="more-information">
+          <ul className="important">
             <li>
-              <a href="/">Legal Notice</a>
+              <Link to="/legal">Legal Notice</Link>
             </li>
             <li>
-              <a href="/">Privacy Notice</a>
+              <Link to="/privacy">Privacy Notice</Link>
             </li>
             <li>
-              <a href="/">Cookie Notice</a>
+              <Link to="/cookie">Cookie Notice</Link>
             </li>
           </ul>
         </div>
       </section>
 
-      <footer className="copyright-podz-ni-bordskiee">
-        <div className="footer-copyright">
-          <p className="copyright">
+      <footer className="copyright-PodzNiBordskiee">
+        <div className="copyright-footer">
+          <p className="copyright-name">
             © 2024 Podz Ni Bordskiee
             <br />
             Follow us on Facebook <i className="fa-brands fa-facebook"></i>

@@ -1,6 +1,6 @@
+import '../css/style.css';
+import '../css/responsive.css';
 import React, { useState, useEffect } from 'react';
-import '../css/home-style.css';
-import '../css/home-responsive.css';
 import '../App.css';
 // import '../../../foodDetails';
 import foodsData from '../foods.json';
@@ -30,10 +30,10 @@ function Search() {
 
   return (
     <form>
-      <div className="form-search">
-        <p>You can discover more recipes and dishes.</p>
 
-        <div className="search">
+      <div className="search-form">
+        <p>You can discover more recipes and dishes.</p>
+        <div className="searching">
           <span className="search-icon material-symbols-outlined">search</span>
           <input
             className="search-input"
@@ -45,7 +45,7 @@ function Search() {
         </div>
 
         {showSuggestions && (
-          <ul className="search-suggestions">
+          <ul className="suggestions-search">
             {suggestions.map((suggestion, index) => (
               <li key={index}>
                 <a

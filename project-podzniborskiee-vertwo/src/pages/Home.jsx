@@ -7,8 +7,6 @@ import Latest from '../components/Latest';
 import SearchHome from '../components/Search';
 import BottomHome from '../components/Bottom';
 
-import '../css/home-style.css';
-import '../css/home-responsive.css';
 
 function Home() {
   return (
