@@ -1,8 +1,14 @@
-@media screen and (max-width: 1680px){
-    
+@media screen and (max-width: 1990px){
+    .header {
+        padding: 1rem; 
+    }
 }
 
-
+@media screen and (max-width: 1680px){
+    .header {
+        padding: 1rem 2%; 
+    }
+}
 
 @media screen and (max-width: 1440px) {
     .header {

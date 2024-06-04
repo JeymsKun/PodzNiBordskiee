@@ -1,6 +1,7 @@
 {
   "name": "project-podzniborskiee-vertwo",
   "version": "0.1.0",
+  "homepage": "https://ustp.abovedigital.co/amantiad-maserin",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -11,7 +12,7 @@
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
-  },
+  },  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
