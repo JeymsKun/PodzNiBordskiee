@@ -2,7 +2,7 @@ import '../css/style.css';
 import '../css/responsive.css';
 import React, { useState } from 'react';
 import '../App.css';
-import projectLogo from '../img/logo.png';
+import projectLogo from '../img/logo.webp';
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -41,9 +41,6 @@ function Header() {
         </Link>
         <Link to="/contactus" style={{ "--i": "3" }} className="contact-btn">
           Contact Us
-        </Link>
-        <Link to="/signup" style={{ "--i": "4" }} className="login-btn">
-          Sign Up
         </Link>
       </nav>
     </header>

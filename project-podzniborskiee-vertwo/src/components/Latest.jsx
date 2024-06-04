@@ -1,14 +1,14 @@
 import '../css/style.css';
 import '../css/responsive.css';
 import '../App.css';
-import dishOneImage from '../img/Chicken-Adobo.jpg';
-import dishTwoImage from '../img/Pork-Adobo.jpg';
-import dishThreeImage from '../img/Beef-Adobo.jpg';
-import dishFourImage from '../img/Goat-Adobo.jpg';
-import dishFiveImage from '../img/Frog-Adobo.jpg';
-import dishSixImage from '../img/Egg-Adobo.jpg';
-import dishSevenImage from '../img/Fish-Adobo.jpg';
-import dishEightImage from '../img/Squid-Adobo.jpg';
+import dishOneImage from '../img/Chicken-Adobo.webp';
+import dishTwoImage from '../img/Pork-Adobo.webp';
+import dishThreeImage from '../img/Beef-Adobo.webp';
+import dishFourImage from '../img/Goat-Adobo.webp';
+import dishFiveImage from '../img/Frog-Adobo.webp';
+import dishSixImage from '../img/Egg-Adobo.webp';
+import dishSevenImage from '../img/Fish-Adobo.webp';
+import dishEightImage from '../img/Squid-Adobo.webp';
 
 function Latest() {
   return (

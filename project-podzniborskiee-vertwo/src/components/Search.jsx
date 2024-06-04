@@ -1,15 +1,13 @@
+import React, { useState, useEffect } from 'react';
 import '../css/style.css';
 import '../css/responsive.css';
-import React, { useState, useEffect } from 'react';
 import '../App.css';
-// import '../../../foodDetails';
 import foodsData from '../foods.json';
+import { Link } from 'react-router-dom'; 
 
 function Search() {
   const [searchTerm, setSearchTerm] = useState("");
-
   const [suggestions, setSuggestions] = useState([]);
-
   const [showSuggestions, setShowSuggestions] = useState(false);
 
   useEffect(() => {
@@ -21,7 +19,7 @@ function Search() {
       setSuggestions(
         filteredSuggestions.length > 0
           ? filteredSuggestions
-          : [{ name: "No results found" }]
+          : [{ name: "No results found", id: null }]
       );
     } else {
       setShowSuggestions(false);
@@ -30,7 +28,6 @@ function Search() {
 
   return (
     <form>
-
       <div className="search-form">
         <p>You can discover more recipes and dishes.</p>
         <div className="searching">
@@ -48,12 +45,13 @@ function Search() {
           <ul className="suggestions-search">
             {suggestions.map((suggestion, index) => (
               <li key={index}>
-                <a
-                  href={`foodDetails.jsx?id=${suggestion.id}`}
-                  data-food-id={suggestion.id}
-                >
-                  {suggestion.name}
-                </a>
+                {suggestion.id ? (
+                  <Link to={`/food-details/${suggestion.id}`}>
+                    {suggestion.name}
+                  </Link>
+                ) : (
+                  suggestion.name 
+                )}
               </li>
             ))}
           </ul>

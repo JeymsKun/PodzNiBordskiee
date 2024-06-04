@@ -2,11 +2,11 @@ import '../css/style.css';
 import '../css/responsive.css';
 import React, { useState, useEffect } from 'react';
 import '../App.css';
-import slideshowFirstImage from '../img/1.jpg';
-import slideshowSecondImage from '../img/2.jpg';
-import slideshowThirdImage from '../img/3.jpg';
-import slideshowFourthImage from '../img/4.jpg';
-import slideshowFifthImage from '../img/5.jpg';
+import slideshowFirstImage from '../img/1.webp';
+import slideshowSecondImage from '../img/2.webp';
+import slideshowThirdImage from '../img/3.webp';
+import slideshowFourthImage from '../img/4.webp';
+import slideshowFifthImage from '../img/5.webp';
 
 function Slideshow() {
   const [selectedRadio, setSelectedRadio] = useState("radio1");

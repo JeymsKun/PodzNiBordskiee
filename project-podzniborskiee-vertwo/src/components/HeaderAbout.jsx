@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../css/about-us-style.css';
 import '../css/about-us-responsive.css';
 import '../App.css';
-import projectLogo from '../img/logo.png';
+import projectLogo from '../img/logo.webp';
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -32,7 +32,6 @@ function Header() {
               <Link to="/recipes" style={{"--i": "1"}} className="recipes-btn">Recipes</Link>
               <Link to="/aboutus" style={{"--i": "2"}} className="about-us-btn">About Us</Link>
               <Link to="/contactus" style={{"--i": "3"}} className="contact-btn">Contact Us</Link>
-              <Link to="/signup" style={{"--i": "4"}} className="login-btn">Sign Up</Link>
           </nav>
       </header>
     );

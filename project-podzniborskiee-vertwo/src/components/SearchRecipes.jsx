@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../css/recipes-style.css';
 import '../css/recipes-responsive.css';
 import '../App.css';
-// import '../../../foodDetails';
 import foodsData from '../foods.json';
 
 function Search() {
