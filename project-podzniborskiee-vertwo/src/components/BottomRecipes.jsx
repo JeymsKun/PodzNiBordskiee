@@ -9,9 +9,9 @@ function Bottom() {
             <section className="bottom-area">
                 <div className="more-info">
                     <ul className="all">
-                        <li><Link to="/legal">Legal Notice</Link></li>
-                        <li><Link to="/privacy">Privacy Notice</Link></li>
-                        <li><Link to="/cookie">Cookie Notice</Link></li>
+                        <li><Link to="/legal/">Legal Notice</Link></li>
+                        <li><Link to="/privacy/">Privacy Notice</Link></li>
+                        <li><Link to="/cookie/">Cookie Notice</Link></li>
                     </ul>
                 </div>
             </section>

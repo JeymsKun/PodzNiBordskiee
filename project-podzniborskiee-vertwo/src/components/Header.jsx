@@ -30,7 +30,7 @@ function Header() {
       </label>
 
       <nav className="navbar">
-        <Link to="/home" style={{ "--i": "0" }} className="home-btn">
+        <Link to="/home/" style={{ "--i": "0" }} className="home-btn">
           Home
         </Link>
         <Link to="/home/recipes" style={{ "--i": "1" }} className="recipes-btn">

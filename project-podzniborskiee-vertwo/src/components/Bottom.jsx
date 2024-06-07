@@ -12,13 +12,13 @@ function Bottom() {
         <div className="more-information">
           <ul className="important">
             <li>
-              <Link to="/legal">Legal Notice</Link>
+              <Link to="/legal/">Legal Notice</Link>
             </li>
             <li>
-              <Link to="/privacy">Privacy Notice</Link>
+              <Link to="/privacy/">Privacy Notice</Link>
             </li>
             <li>
-              <Link to="/cookie">Cookie Notice</Link>
+              <Link to="/cookie/">Cookie Notice</Link>
             </li>
           </ul>
         </div>
